@@ -4,4 +4,5 @@ public class Faculty extends Employee{
     public boolean isRegular(boolean status) {
         return status;
     }
+
 }

@@ -33,22 +33,21 @@ public class CollegeList extends Person{
             fac.setDepartment(sc.next());
 
             if(press == 'Y' || press == 'y') {
-                boolean status = true;
-                status = fac.isRegular(status);
+                fac.isRegular(true);
+                String Status = "Regular";
                 System.out.println("------------------------------");
-                System.out.println("Name: " + fac.getName() + "\nContact Number: " + fac.getContactNum() + "\nSalary: " + fac.getSalary() + "\nDepartment: " + fac.getDepartment() + "\nRegular: " + status);
-
+                System.out.println("Name: " + fac.getName() + "\nContact Number: " + fac.getContactNum() + "\nSalary: " + fac.getSalary() + "\nDepartment: " + fac.getDepartment() + "\nStatus: " + Status);
             } else if(press == 'N' || press == 'n') {
-                boolean status = false;
-                status = fac.isRegular(status);
+                fac.isRegular(false);
+                String Status = "Tenured";
                 System.out.println("------------------------------");
-                System.out.println("Name: " + fac.getName() + "\nContact Number: " + fac.getContactNum() + "\nSalary: " + fac.getSalary() + "\nDepartment: " + fac.getDepartment() + "\nRegular: " + status);
+                System.out.println("Name: " + fac.getName() + "\nContact Number: " + fac.getContactNum() + "\nSalary: " + fac.getSalary() + "\nDepartment: " + fac.getDepartment() + "\nStatus: " + Status);
             } else {
                 System.out.println("Invalid input.");
             }
 
         } else if (input.equalsIgnoreCase("S")) {
-            System.out.println("Type student's name, contact number, enrolled program, name and year level (1-4).\nPress Enter after every input.");
+            System.out.println("Type student's name, contact number, enrolled program, and year level (1-4).\nPress Enter after every input.");
 
             stu.setName(sc.nextLine());
             stu.setContactNum(sc.next());
