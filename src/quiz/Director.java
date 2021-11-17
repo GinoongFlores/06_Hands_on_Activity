@@ -12,7 +12,6 @@ public class Director extends Manager{
         director.salary = 80000;
         manager.budget = 100000;
         director.stockOptions = 1000;
-//        System.out.println(employee.salary + director.salary + manager.budget + director.stockOptions);
 
     }
 }
